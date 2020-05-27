@@ -1,0 +1,58 @@
+header {
+  background-color: $darkest-blue;
+  color: #fff;
+  height: auto;
+
+  .logo-items {
+    img {
+      float: left;
+      height: 120px;
+      width: auto;
+      margin-top: 20px;
+    }
+
+    p {
+      display: none;
+      font-family: $logo-font;
+
+      @media screen and (min-width: 750px) {
+        display: inline;
+      }
+    }
+
+    :last-child {
+      @media screen and (min-width: 750px) {
+        display: block;
+      }
+    }
+  }
+
+  .main-nav {
+    float: right;
+    list-style: none;
+    // text-decoration: none;
+    margin-top: 50px;
+
+    li {
+      display: inline-block;
+      margin-left: 30px;
+
+      a {
+        :link, :visited {
+          padding: 8px 0;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 90%;
+        }
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      margin-top: 0;
+      li {
+        margin-left: 50px;
+      }
+    }
+  }
+}

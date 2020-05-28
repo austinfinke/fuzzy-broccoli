@@ -3,47 +3,54 @@ header {
   color: #fff;
   height: auto;
 
-  .logo-items {
+  a {
+    color: #fff;
+    text-decoration: none;
+
     img {
       float: left;
-      height: 120px;
+      height: 100px;
       width: auto;
-      margin-top: 20px;
+      margin: 50px 25px;
     }
-
     p {
       display: none;
       font-family: $logo-font;
+      font-size: 220%;
+      margin-top: 78px;
+      position: absolute;
+      line-height: 78%;
 
       @media screen and (min-width: 750px) {
         display: inline;
       }
     }
-
-    :last-child {
-      @media screen and (min-width: 750px) {
-        display: block;
-      }
-    }
   }
 
   .main-nav {
-    float: right;
     list-style: none;
     // text-decoration: none;
-    margin-top: 50px;
+    float: right;
+    margin-top: 78px;
 
     li {
       display: inline-block;
       margin-left: 30px;
 
       a {
-        :link, :visited {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+
+        &:link,
+        &:visited {
           padding: 8px 0;
-          color: #fff;
-          text-decoration: none;
           text-transform: uppercase;
           font-size: 90%;
+        }
+        &:hover,
+        &:active {
+          border-bottom: 2px orange solid;
         }
       }
     }
@@ -54,5 +61,14 @@ header {
         margin-left: 50px;
       }
     }
+  }
+
+  &:after {
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: #ffdd8a;
+    content: "";
+    margin: 0 auto;
   }
 }

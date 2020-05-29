@@ -13,11 +13,7 @@ accent-yellow-hover: #e1aa05
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-<<<<<<< HEAD
   overflow-x: hidden;
-=======
-  /* overflow-x: hidden; */
->>>>>>> 98d088f54a4d1ad66f9798eb35a46012ae3b5377
 }
 
 body {

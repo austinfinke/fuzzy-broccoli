@@ -13,10 +13,11 @@ accent-yellow-hover: #e1aa05
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 body {
-  background-color: #fff;
+  background-color: #fafafa;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -45,11 +46,34 @@ body {
   border-color: #e1aa05;
 }
 
+.card {
+  padding: 1%;
+  /* width: 30%;
+  float: left; */
+  /* display: inline; */
+  /* height: auto; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* border: 1px #08298c solid; */
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .row {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-section {
+/* section {
   width: 100vw;
+  background-color: #efefef;
+  position: relative;
+} */
+
+.quote {
+  text-align: center;
+}
+
+.quote h1 {
+  margin: 100px auto;
 }

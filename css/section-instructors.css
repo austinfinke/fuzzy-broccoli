@@ -1,27 +1,10 @@
-.section-instructors:before {
-  display: block;
-  height: 2px;
-  width: 35%;
-  background-color: #f2b705;
-  content: "";
-  margin: 0 auto;
-}
-
 .section-instructors {
-  height: 100vh;
+  height: 100%;
   /* padding-top: 70px; */
   margin: 0 auto;
   width: 1140px;
   background-color: #fafafa;
   /* border: 1px solid red; */
-}
-
-.section-instructors h1 {
-  font-size: 175%;
-  text-transform: uppercase;
-  margin: 100px auto 60px auto;
-  text-align: center;
-  letter-spacing: 6px;
 }
 
 .section-instructors .card {
@@ -40,8 +23,8 @@
   border-radius: 3px;
 }
 
-.section-instructors a p:first-of-type {
-  padding-top: 25px;
+.section-instructors a p {
+  padding: 20px 0;
   font-size: 120%;
   letter-spacing: 4px;
 }

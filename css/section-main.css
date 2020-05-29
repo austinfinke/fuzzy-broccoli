@@ -1,8 +1,8 @@
 .section-main {
-  margin: 40px auto 0;
+  margin: 40px auto 100px auto;
   width: 1140px;
   background-color: #ffffff;
-  height: 550px;
+  height: 68vh;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../css/assets/images/section-main-right.jpg);
@@ -37,4 +37,20 @@
   position: absolute;
   left: 50%;
   top: 84%;
+}
+
+.section-main i + p {
+  margin-top: 20px;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+}
+
+.section-main i + p:after {
+  display: block;
+  height: 2px;
+  width: 35%;
+  background-color: #f2b705;
+  content: "";
+  margin: 0 auto;
 }

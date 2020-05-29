@@ -38,3 +38,19 @@
   left: 50%;
   top: 84%;
 }
+
+.section-main i + p {
+  margin-top: 20px;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+}
+
+.section-main i + p:after {
+  display: block;
+  height: 2px;
+  width: 35%;
+  background-color: #f2b705;
+  content: "";
+  margin: 0 auto;
+}

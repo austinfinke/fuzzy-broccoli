@@ -13,7 +13,11 @@ accent-yellow-hover: #e1aa05
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+  /* overflow-x: hidden; */
+>>>>>>> 98d088f54a4d1ad66f9798eb35a46012ae3b5377
 }
 
 body {
@@ -34,7 +38,7 @@ body {
 }
 
 .btn-yellow {
-  padding: 10px 18px;
+  padding: 7px 18px;
   background-color: #f2b705;
   border: 1px solid #f2b705;
   border-radius: 3px;
@@ -45,6 +49,12 @@ body {
   background-color: #e1aa05;
   border-color: #e1aa05;
   cursor: pointer;
+}
+
+.card {
+  padding: 1%;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -76,7 +86,7 @@ body {
 .section-title {
   font-size: 175%;
   text-transform: uppercase;
-  margin: 100px auto 60px auto;
+  margin: 100px auto 75px auto;
   text-align: center;
   letter-spacing: 6px;
 }

@@ -49,9 +49,9 @@ nav a {
   border-bottom: none;
 }
 
-.main-nav li a i {
-  /* TODO: invert on click */
-}
+/* .main-nav li a i {
+  TODO: invert on click
+} */
 
 header:after {
   display: block;

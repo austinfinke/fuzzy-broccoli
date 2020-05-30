@@ -16,111 +16,143 @@
     <link rel="stylesheet" href="./css/section-main.css" />
     <link rel="stylesheet" href="./css/section-instructors.css" />
     <link rel="stylesheet" href="./css/section-testimonials.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>GTI - Home</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="row">
+            <a href="#">
+              <img
+                class="main-logo"
+                src="./css/assets/images/gti_logo.png"
+                alt="main-logo"
+              />
+            </a>
+            <ul class="main-nav">
+              <li>
+                <a href="#">Home<i class="arrow-yellow"></i></a>
+              </li>
+              <li>
+                <a href="#">About<i class="arrow-yellow"></i></a>
+              </li>
+              <li>
+                <a href="#">Courses<i class="arrow-yellow"></i></a>
+              </li>
+              <li class="btn-yellow"><a id="apply" href="#">Apply</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="section-main">
         <div class="row">
-          <a href="#">
-            <img
-              class="main-logo"
-              src="./css/assets/images/gti_logo.png"
-              alt="main-logo"
-            />
-          </a>
-          <ul class="main-nav">
-            <li>
-              <a href="#">Home<i class="arrow-yellow"></i></a>
-            </li>
-            <li>
-              <a href="#">About<i class="arrow-yellow"></i></a>
-            </li>
-            <li>
-              <a href="#">Courses<i class="arrow-yellow"></i></a>
-            </li>
-            <li class="btn-yellow"><a id="apply" href="#">Apply</a></li>
-            <li><a href="#">Donate</a></li>
-          </ul>
+          <h1>"We build people." - Pa Ousman Joof</h1>
+          <p>Gambian Talents Inc | Founder</p>
+          <i class="fas fa-arrow-circle-down fa-2x"></i>
         </div>
-      </nav>
-    </header>
+      </section>
 
-    <section class="section-main">
-      <div class="row">
-        <h1>"We build people." - Pa Ousman Joof</h1>
-        <p>Gambian Talents Inc | Founder</p>
-        <i class="fas fa-arrow-circle-down fa-2x"></i>
-      </div>
-    </section>
-
-    <section class="quote">
-      <div class="row row-white">
-        <h1>
-          "We strive to enrich the lives of others through education and
-          mentorship."
-        </h1>
-      </div>
-    </section>
-
-    <section class="section-instructors">
-      <div class="row">
-        <h1 class="section-title">Meet Our Instructors</h1>
-      </div>
-      <div class="row">
-        <div class="col span-1-of-3 card">
-          <!-- Photo by Prince Akachi on Unsplash -->
-          <a href="#">
-            <img
-              src="./css/assets/images/instructor_1.jpg"
-              alt="instructor photo"
-            />
-            <p>
-              Akachi Prince
-            </p>
-          </a>
-        </div>
-        <div class="col span-1-of-3 card">
-          <!-- Photo by David Rotimi on Unsplash -->
-          <a href="#">
-            <img
-              src="./css/assets/images/instructor_2.jpg"
-              alt="instructor photo"
-            />
-            <p>
-              Rotimi David
-            </p>
-          </a>
-        </div>
-        <div class="col span-1-of-3 card">
-          <!-- Photo by Hatham on Unsplash -->
-          <a href="#">
-            <img
-              src="./css/assets/images/instructor_3.jpg"
-              alt="instructor photo"
-            />
-            <p>
-              Hatham Oby
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-testimonials">
-      <div class="row">
-        <h1 class="section-title">Testimonials</h1>
-      </div>
-      <div class="row">
-        <div class="box">
+      <section class="quote">
+        <div class="row row-white">
           <h1>
-            "Gambian Talents helped me <br />
-            become competitive in Seattle's job market."
+            "We strive to enrich the lives of others through education and
+            mentorship."
           </h1>
-          <p>Hans Gchou | Graphic Design Student - 2020</p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="section-instructors">
+        <div class="row">
+          <h1 class="section-title">Meet Our Instructors</h1>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3 card">
+            <!-- Photo by Prince Akachi on Unsplash -->
+            <a href="#">
+              <img
+                src="./css/assets/images/instructor_1.jpg"
+                alt="instructor photo"
+              />
+              <p>
+                Akachi Prince
+              </p>
+            </a>
+          </div>
+          <div class="col span-1-of-3 card">
+            <!-- Photo by David Rotimi on Unsplash -->
+            <a href="#">
+              <img
+                src="./css/assets/images/instructor_2.jpg"
+                alt="instructor photo"
+              />
+              <p>
+                Rotimi David
+              </p>
+            </a>
+          </div>
+          <div class="col span-1-of-3 card">
+            <!-- Photo by Hatham on Unsplash -->
+            <a href="#">
+              <img
+                src="./css/assets/images/instructor_3.jpg"
+                alt="instructor photo"
+              />
+              <p>
+                Hatham Oby
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="row">
+          <h1 class="section-title">Testimonials</h1>
+        </div>
+        <div class="row">
+          <div class="box">
+            <h1>
+              "Gambian Talents helped me <br />
+              become competitive in Seattle's job market."
+            </h1>
+            <p>Hans Gchou | Graphic Design Student - 2020</p>
+          </div>
+        </div>
+      </section>
+      <div class="push"></div>
+      <footer>
+        <div class="row">
+          <div class="col span-1-of-3 footer-list">
+            <ul class="footer-link">
+              <li><a href="#">Location Information</a></li>
+              <li><a href="#">Mission Statement</a></li>
+              <li><a href="#">Application</a></li>
+            </ul>
+          </div>
+          <div class="col span-1-of-3 footer-list">
+            <ul class="footer-link">
+              <li><a href="#">Safety</a></li>
+              <li><a href="#">Policies</a></li>
+              <li><a href="#">Non-Discrimination</a></li>
+            </ul>
+          </div>
+          <div class="col span-1-of-3 footer-list">
+            <ul class="footer-link">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a class="btn-yellow" href="#">Donate</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row copyright">
+          <small>Copyright &copy; 2020 - BIT113 Cascadia</small>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

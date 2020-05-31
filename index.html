@@ -9,6 +9,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/assets/grid.css" />
@@ -24,7 +28,7 @@
     <div class="container">
       <header>
         <nav>
-          <div class="row">
+          <div class="row rel">
             <a href="./index.html">
               <img
                 class="main-logo"
@@ -40,7 +44,7 @@
                 ></a>
               </li>
               <li class="js--main-nav-about-li">
-                <a href="#"
+                <a href="./crap.html"
                   >About<i class="arrow-yellow-down js--arrow-about"></i
                 ></a>
               </li>
@@ -56,25 +60,39 @@
             <div class="menu menu-home">
               <ul>
                 <li>
-                  <a href="#">Testimonials</a>
+                  <a href="#" data-linkname="testimonials">Testimonials</a>
                 </li>
               </ul>
             </div>
 
             <div class="menu menu-about">
               <ul>
-                <li><a href="#">Instructors</a></li>
+                <li>
+                  <a href="#" data-linkname="instructors">Instructors</a>
+                </li>
               </ul>
             </div>
 
             <div class="menu menu-courses">
               <ul>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">Journalism</a></li>
-                <li><a href="#">Photography</a></li>
-                <li><a href="#">Videography</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Information Tech</a></li>
+                <li>
+                  <a href="#" data-linkname="graphicdesign">Graphic Design</a>
+                </li>
+                <li>
+                  <a href="#">Journalism</a>
+                </li>
+                <li>
+                  <a href="#">Photography</a>
+                </li>
+                <li>
+                  <a href="#">Videography</a>
+                </li>
+                <li>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <a href="#">Information Tech</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -85,7 +103,9 @@
         <div class="row">
           <h1>"We build people." - Pa Ousman Joof</h1>
           <p>Gambian Talents Inc | Founder</p>
-          <i class="fas fa-arrow-circle-down fa-2x"></i>
+          <i
+            class="fas fa-arrow-circle-down fa-2x animate__animated animate__bounce"
+          ></i>
         </div>
       </section>
 
@@ -156,7 +176,9 @@
           </div>
         </div>
       </section>
+
       <div class="push"></div>
+
       <footer>
         <div class="row">
           <div class="col span-1-of-3 footer-list">

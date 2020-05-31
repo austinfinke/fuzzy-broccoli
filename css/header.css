@@ -49,44 +49,39 @@ nav a {
   border-bottom: none;
 }
 
-/* .main-nav li a i {
-  TODO: invert on click
-} */
+.rel {
+  position: relative;
+}
 
 .menu {
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 900;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu ul li a {
+  text-transform: uppercase;
+  color: #070a40;
+  font-weight: 400;
+}
+
+.menu-home {
   display: none;
   position: absolute;
-  background-color: #fff;
+  margin-left: 29.5%;
+  margin-top: 11%;
   width: 18%;
-  z-index: 900;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.menu-home {
-  top: 125px;
-  right: 750px;
+  text-align: center;
 }
 
-.menu-about {
-  top: 125px;
-  right: 610px;
-}
-
-.menu-courses {
-  top: 125px;
-  right: 445px;
-}
-
-.show {
-  display: block;
-}
-
-.menu ul {
+.menu-home ul {
   border: 2px solid #070a40;
   list-style: none;
   line-height: 200%;
+  text-align: center;
 }
 
-.menu ul li {
+.menu-home ul li {
   margin: 10px 0;
   padding-bottom: 10px;
   text-align: center;
@@ -94,15 +89,72 @@ nav a {
   border-bottom: 2px solid #f2b705;
 }
 
-.menu ul li:last-of-type {
+.menu-home ul li:last-of-type {
   margin: 10px 0 0 0;
   border-bottom: none;
 }
 
-.menu ul li a {
-  text-decoration: none;
-  font-weight: 400;
-  color: #070a40;
+.menu-about {
+  display: none;
+  position: absolute;
+  margin-left: 41.5%;
+  margin-top: 11%;
+  width: 18%;
+  text-align: center;
+}
+
+.menu-about ul {
+  border: 2px solid #070a40;
+  list-style: none;
+  line-height: 200%;
+  text-align: center;
+}
+
+.menu-about ul li {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f2b705;
+}
+
+.menu-about ul li:last-of-type {
+  margin: 10px 0 0 0;
+  border-bottom: none;
+}
+
+.menu-courses {
+  display: none;
+  position: relative;
+  margin-left: 56%;
+  margin-top: 11%;
+  width: 18%;
+  text-align: center;
+  z-index: 900;
+}
+
+.menu-courses ul {
+  border: 2px solid #070a40;
+  list-style: none;
+  line-height: 200%;
+  text-align: center;
+}
+
+.menu-courses ul li {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f2b705;
+}
+
+.menu-courses ul li:last-of-type {
+  margin: 10px 0 0 0;
+  border-bottom: none;
+}
+
+.show {
+  display: block;
 }
 
 header:after {

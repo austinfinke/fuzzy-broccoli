@@ -2,6 +2,9 @@ $(() => {
   itemHover("courses");
   itemHover("about");
   itemHover("home");
+  itemClick("home");
+  itemClick("about");
+  onScroll();
 });
 
 const itemHover = (item) => {
@@ -33,14 +36,20 @@ const itemHover = (item) => {
   });
 };
 
-function itemClick(e) {
-  const linkname = e.getAttribute("data-linkName");
-  console.log(linkname);
-  const link = document.querySelector(`.js--main-link-${linkname}`);
-  link.addEventListener("click", (e) => {
+function itemClick(item) {
+  const menu = document.querySelector(`.menu-${item}`);
+  menu.addEventListener("click", (e) => {
     e.preventDefault();
-    const view = document.querySelector(".section-testimonials");
-    view.scrollIntoView();
+    const linkname = e.target.getAttribute("data-linkname");
+    const view = document.querySelector(`.section-${linkname}`);
+    view ? view.scrollIntoView() : 0;
+  });
+}
+
+function onScroll() {
+  const arrow = document.querySelector(".fa-arrow-circle-down");
+  document.addEventListener("scroll", () => {
+    arrow.style.display = "none";
   });
 }
 

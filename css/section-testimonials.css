@@ -3,7 +3,6 @@
   width: 1140px;
   background-color: #fff;
   margin: 50px auto;
-  position: relative;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,25 +18,30 @@
   background-position: center;
   /* for footer */
   padding-bottom: 350px;
+
+  position: relative;
 }
 
 .box h1 {
+  position: absolute;
+
   font-size: 150%;
   text-align: right;
-  position: absolute;
-  top: 70%;
-  left: 20%;
+  margin-top: 35%;
+  margin-left: 25%;
+
   width: 70%;
 }
 
 .box p {
   position: absolute;
-  top: 79%;
-  left: 54.5%;
+  text-align: right;
+  margin-top: 42%;
+  margin-left: 55%;
 }
 
 .box h1,
 .box p {
-  margin: 0;
+  /* margin: 0; */
   color: #fff;
 }

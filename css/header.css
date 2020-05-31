@@ -11,7 +11,8 @@ nav a {
 }
 
 .main-logo {
-  height: 200px;
+  width: 100%;
+  height: auto;
   float: left;
   margin: 15px 0;
 }
@@ -157,6 +158,19 @@ nav a {
   display: block;
 }
 
+.fa-bars {
+  display: none;
+  transition: 0.2s;
+  color: rgba(255, 255, 255, 0.3);
+  float: right;
+  padding: 4%;
+  margin-top: 5%;
+}
+
+.fa-bars:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 header:after {
   display: block;
   height: 8px;
@@ -164,18 +178,18 @@ header:after {
   background-color: #f2b705;
   content: "";
   margin: 0 auto;
-  /* content: "";
-  position: absolute;
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.5) 30%,
-    rgba(255, 255, 255, 0) 31%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  top: -30px;
-  bottom: -30px;
-  left: -30px;
-  right: -30px;
-  opacity: 0.1; */
+}
+
+@media screen and (max-width: 1140px) {
+  .main-logo {
+    margin-left: 2%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
 }

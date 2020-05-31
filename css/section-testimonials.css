@@ -1,6 +1,6 @@
 .section-testimonials {
   height: 100%;
-  width: 1140px;
+  width: 80%;
   background-color: #fff;
   margin: 50px auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -11,9 +11,6 @@
   width: 90%;
   margin: 0 auto 100px auto;
   border-radius: 3px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../css/assets/images/student_testimonial.jpg);
-  /* Photo by Yingchou Han on Unsplash */
   background-size: cover;
   background-position: center;
   /* for footer */
@@ -21,6 +18,18 @@
 
   position: relative;
 }
+
+.testimonial-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../css/assets/images/testimonial_1.jpg);
+  /* Photo by Yingchou Han on Unsplash */
+}
+
+/* .testimonial-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../css/assets/images/testimonial_2.jpg);
+  Photo by LinkedIn Sales Navigator on Unsplash
+} */
 
 .box h1 {
   position: absolute;
@@ -42,6 +51,24 @@
 
 .box h1,
 .box p {
-  /* margin: 0; */
   color: #fff;
+}
+
+.section-testimonials i {
+  position: absolute;
+  padding: 5%;
+  padding: 48% 0 0 0;
+  color: rgba(255, 255, 255, 0.15);
+  margin: 0 0 0 2%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-testimonials i:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.section-testimonials i:last-of-type {
+  float: right;
+  margin: 0 0 0 94%;
 }

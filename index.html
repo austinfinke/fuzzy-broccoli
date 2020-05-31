@@ -9,10 +9,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/assets/grid.css" />
@@ -29,7 +25,7 @@
       <header>
         <nav>
           <div class="row rel">
-            <a href="./index.html">
+            <a class="col span-1-of-3" href="./index.html">
               <img
                 class="main-logo"
                 src="./css/assets/images/gti_logo.png"
@@ -37,7 +33,7 @@
               />
             </a>
 
-            <ul class="main-nav">
+            <ul class="main-nav" class="col span-2-of-3">
               <li class="js--main-nav-home-li">
                 <a href="./index.html"
                   >Home<i class="arrow-yellow-down js--arrow-home"></i
@@ -56,6 +52,8 @@
               <li class="btn-yellow"><a id="apply" href="#">Apply</a></li>
               <li><a href="#">Donate</a></li>
             </ul>
+
+            <i class="fas fa-bars fa-2x"></i>
 
             <div class="menu menu-home">
               <ul>
@@ -99,13 +97,11 @@
         </nav>
       </header>
 
-      <section class="section-main">
+      <section class="section-main span-3-of-3">
         <div class="row">
           <h1>"We build people." - Pa Ousman Joof</h1>
           <p>Gambian Talents Inc | Founder</p>
-          <i
-            class="fas fa-arrow-circle-down fa-2x animate__animated animate__bounce"
-          ></i>
+          <i class="fas fa-arrow-circle-down fa-2x"></i>
         </div>
       </section>
 
@@ -162,20 +158,27 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials span-3-of-3" id="js--testimonial-1">
         <div class="row">
           <h1 class="section-title">Testimonials</h1>
         </div>
         <div class="row">
-          <div class="box">
+          <div class="box testimonial-1">
             <h1>
               "Gambian Talents helped me <br />
               become competitive in Seattle's job market."
             </h1>
-            <p>Hans Gchou | Graphic Design Student - 2020</p>
+            <p>
+              Hans Gchou | Graphic Design Student - 2020
+            </p>
+            <i class="fas fa-arrow-circle-left fa-2x"></i>
+            <i class="fas fa-arrow-circle-right fa-2x"></i>
           </div>
         </div>
       </section>
+      <!-- Navi Deknil | Web Design Student - 2019 -->
+      <!-- "I found my passion. Then, I found<br />
+              a career. Gambian Talents changed my life." -->
 
       <div class="push"></div>
 
@@ -208,11 +211,7 @@
         </div>
       </footer>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

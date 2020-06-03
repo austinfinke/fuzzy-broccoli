@@ -74,7 +74,7 @@ function animateArrow() {
 
 function checkScreen() {
   const logo = document.querySelector(".main-logo");
-  const path = `file:///Users/austinfinke/Desktop/Cascadia/Bit113/fuzzy-broccoli/css/assets/images/gti_logo_mobile.png`;
+  const path = `./css/assets/images/gti_logo_mobile.png`;
   if (window.innerWidth < 900) {
     logo.src = path;
   }

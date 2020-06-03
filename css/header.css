@@ -197,3 +197,15 @@ header:after {
     display: block;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .fa-bars {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .main-logo {
+    margin-left: 0.5%;
+    width: 90%;
+  }
+}

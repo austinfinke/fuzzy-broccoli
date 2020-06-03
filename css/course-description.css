@@ -1,0 +1,48 @@
+.section-description-1 {
+  background-image: linear-gradient(
+    to right,
+    rgba(242, 183, 5, 0.4),
+    #ffffff 100%
+  );
+  columns: 2;
+}
+
+.section-description-1 h3,
+.section-description-2 h3 {
+  margin-top: 10px;
+}
+
+#s1 {
+  height: auto;
+  width: 540px;
+}
+.containers {
+  margin: 75px 20px;
+}
+
+.info-1 {
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.section-description-2 {
+  background-image: linear-gradient(
+    to left,
+    rgba(28, 37, 227, 0.4),
+    #ffffff 100%
+  );
+}
+
+#s2 {
+  margin-top: 30px;
+  height: auto;
+  width: 540px;
+  float: right;
+}
+
+.info-2 {
+  margin-left: 10px;
+  margin-right: 50%;
+  margin-bottom: 20px;
+  text-align: justify;
+}

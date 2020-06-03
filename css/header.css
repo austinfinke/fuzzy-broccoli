@@ -163,12 +163,16 @@ nav a {
   transition: 0.2s;
   color: rgba(255, 255, 255, 0.3);
   float: right;
+
+  /* position: fixed; */
+  /* cursor: progress; */
   padding: 4%;
   margin-top: 5%;
 }
 
 .fa-bars:hover {
   color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 header:after {
@@ -182,7 +186,7 @@ header:after {
 
 @media screen and (max-width: 1140px) {
   .main-logo {
-    margin-left: 2%;
+    margin-left: 1%;
   }
 
   .main-nav {

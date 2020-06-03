@@ -6,6 +6,7 @@ $(() => {
   itemClick("about");
   onScroll();
   animateArrow();
+  checkScreen();
 });
 
 const itemHover = (item) => {
@@ -69,6 +70,14 @@ function animateArrow() {
   arrow.animate({ top: "94%" }, 50);
   arrow.animate({ top: "95%" }, 40);
   arrow.animate({ top: "96%" }, 30);
+}
+
+function checkScreen() {
+  const logo = document.querySelector(".main-logo");
+  const path = `file:///Users/austinfinke/Desktop/Cascadia/Bit113/fuzzy-broccoli/css/assets/images/gti_logo_mobile.png`;
+  if (window.innerWidth < 900) {
+    logo.src = path;
+  }
 }
 
 /**

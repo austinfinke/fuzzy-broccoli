@@ -72,3 +72,20 @@
   float: right;
   margin: 0 0 0 94%;
 }
+
+@media screen and (max-width: 1140px) {
+  .box h1,
+  .box p {
+    margin-left: 10%;
+  }
+
+  .box h1 {
+    font-size: 120%;
+    font-weight: 400;
+    margin-top: 45%;
+  }
+
+  .box p {
+    margin-top: 52%;
+  }
+}

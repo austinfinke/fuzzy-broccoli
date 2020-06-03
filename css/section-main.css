@@ -17,7 +17,7 @@
 .section-main-content {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   text-align: center;
 }
 
@@ -29,8 +29,8 @@
   color: #fff;
   font-weight: 400;
 
-  margin-top: 15%;
-  margin-left: 12%;
+  margin-top: 30%;
+  margin-left: 8%;
 }
 
 .section-main-content h1 + p {
@@ -38,8 +38,8 @@
   /* position: relative; */
 
   color: #fff;
-  /* margin-left: 46%;
-  margin-top: 31%; */
+  margin-left: 36%;
+  margin-top: -2%;
 }
 
 .section-main i {

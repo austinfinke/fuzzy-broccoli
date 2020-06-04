@@ -7,12 +7,8 @@
   /* border: 1px solid red; */
 }
 
-.section-instructors h1 {
-  font-size: 175%;
-  text-transform: uppercase;
-  margin: 100px auto 60px auto;
-  text-align: center;
-  letter-spacing: 6px;
+.section-instructors .section-title {
+  margin-bottom: 65px;
 }
 
 .section-instructors .card {
@@ -35,4 +31,27 @@
   padding: 20px 0;
   font-size: 120%;
   letter-spacing: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-instructors {
+    width: 96%;
+  }
+
+  .section-instructors .section-title {
+    margin: 18% 0 12% 0;
+  }
+
+  .section-instructors .card {
+    margin-top: 5%;
+  }
+
+  .section-instructors .card img {
+    width: 90%;
+    height: auto;
+  }
+
+  .section-instructors a p {
+    font-size: 100%;
+  }
 }

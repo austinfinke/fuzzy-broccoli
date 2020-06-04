@@ -3,13 +3,14 @@
   width: 80%;
   background-color: #fff;
   margin: 50px auto;
+  padding-bottom: 4%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .box {
   height: 68vh;
   width: 90%;
-  margin: 0 auto 100px auto;
+  margin: 0 auto;
   border-radius: 3px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../css/assets/images/testimonial_1.jpg);
@@ -34,17 +35,14 @@
 
   font-size: 150%;
   text-align: right;
-  margin-top: 35%;
-  margin-left: 25%;
-
-  width: 70%;
+  margin: 35% 0 0 15%;
+  width: 80%;
 }
 
 .box p {
   position: absolute;
   text-align: right;
-  margin-top: 42%;
-  margin-left: 55%;
+  margin: 42% 0 0 55%;
 }
 
 .box h1,
@@ -54,10 +52,9 @@
 
 .section-testimonials i {
   position: absolute;
-  padding: 5%;
-  padding: 48% 0 0 0;
   color: rgba(255, 255, 255, 0.15);
-  margin: 0 0 0 2%;
+  bottom: 0;
+  left: 1;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -67,8 +64,9 @@
 }
 
 .section-testimonials i:last-of-type {
-  float: right;
-  margin: 0 0 0 94%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 1140px) {
@@ -85,5 +83,30 @@
 
   .box p {
     margin-top: 52%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-testimonials {
+    width: 96%;
+    background-position: left;
+  }
+
+  .box {
+    height: 120%;
+    width: 96%;
+  }
+
+  .box h1 {
+    font-size: 95%;
+    width: 100%;
+    margin: 73% 0 0 0;
+  }
+
+  .box p {
+    font-size: 60%;
+    margin: 85% 0 0 0;
+    text-align: right;
+    width: 100%;
   }
 }

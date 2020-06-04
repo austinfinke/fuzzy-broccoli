@@ -110,7 +110,12 @@ body {
 
 @media screen and (max-width: 480px) {
   .section-title {
-    font-size: 100%;
+    font-size: 150%;
     font-weight: 400;
+    margin: 18% 0 12% 0;
+  }
+
+  .quote h1 {
+    font-size: 115%;
   }
 }

@@ -115,6 +115,10 @@ body {
     margin: 18% 0 12% 0;
   }
 
+  .quote {
+    height: auto;
+  }
+
   .quote h1 {
     font-size: 115%;
   }

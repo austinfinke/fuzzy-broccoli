@@ -27,6 +27,7 @@ const itemHover = (item) => {
   });
 
   hoverMenu.addEventListener("mouseover", (e) => {
+    hackMargin();
     hoverMenu.classList.add("show");
     arrow.classList.add("arrow-yellow-up");
   });
@@ -78,6 +79,14 @@ function checkScreen() {
   if (window.innerWidth < 900) {
     logo.src = path;
   }
+}
+
+function hackMargin() {
+  const navLink = document.querySelector(".js--main-nav-courses-li");
+  const menu = document.querySelector(".menu-courses");
+  let mL = navLink.getBoundingClientRect();
+  mL = mL.left;
+  menu.style.marginLeft = mL;
 }
 
 /**

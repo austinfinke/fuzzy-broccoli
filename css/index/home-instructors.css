@@ -22,8 +22,8 @@
 }
 
 .section-instructors .card img {
-  height: 465px;
-  width: auto;
+  max-width: 100%;
+  max-height: auto;
   border-radius: 3px;
 }
 

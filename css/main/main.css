@@ -16,32 +16,11 @@ accent-yellow-hover: #e1aa05
   overflow-x: hidden;
 }
 
-.arrow-yellow-down {
-  border: solid #f2b705;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  margin-left: 10px;
-  margin-bottom: 5px;
-}
-
-.arrow-yellow-up {
-  border: solid #f2b705;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-135deg);
-  margin-left: 10px;
-  margin-bottom: 5px;
-}
-
 body {
   background-color: #fafafa;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 300;
-
   height: 100%;
 }
 
@@ -50,7 +29,7 @@ body {
 }
 
 .btn-yellow {
-  padding: 10px 14px;
+  padding: 3px 10px;
   background-color: #f2b705;
   border: 1px solid #f2b705;
   border-radius: 3px;

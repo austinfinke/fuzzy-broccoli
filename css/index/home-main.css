@@ -4,7 +4,7 @@
   background-color: #ffffff;
   height: 68vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../css/assets/images/section-main-right.jpg);
+    url(../assets/images/section-main-right.jpg);
   /* Photo by NESA by Makers on Unsplash */
   background-size: cover;
   background-position: center;
@@ -38,16 +38,17 @@
 
 .section-main i {
   position: fixed;
-
+  margin: 0 auto;
   color: rgba(255, 255, 255, 0.4);
+
   top: 96%;
-  left: 50%;
+  /* left: 50%; */
 }
 
 @media screen and (max-width: 900px) {
   .section-main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../css/assets/images/section-main-left.jpg);
+      url(../assets/images/section-main-left.jpg);
   }
 }
 

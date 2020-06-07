@@ -13,42 +13,36 @@
     />
     <link rel="stylesheet" href="./css/assets/normalize.css" />
     <link rel="stylesheet" href="./css/assets/grid.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/section-instructors.css" />
-    <link rel="stylesheet" href="./css/section-testimonials.css" />
-    <link rel="stylesheet" href="./css/section-main.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main/header.css" />
+    <link rel="stylesheet" href="./css/index/home-instructors.css" />
+    <link rel="stylesheet" href="./css/index/home-testimonials.css" />
+    <link rel="stylesheet" href="./css/index/home-main.css" />
+    <link rel="stylesheet" href="./css/main/footer.css" />
+    <link rel="stylesheet" href="./css/main/main.css" />
     <title>GTI - Home</title>
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
-          <div class="row rel">
+          <div class="row">
             <a class="col span-1-of-3" href="./index.html">
               <img
                 class="main-logo"
-                src="./css/assets/images/gti_logo.png"
+                src="./css/assets/images/gti_logo_mobile.png"
                 alt="main-logo"
               />
             </a>
 
-            <ul class="main-nav col span-2-of-3">
-              <li class="js--main-nav-home-li">
-                <a href="./index.html"
-                  >Home<i class="arrow-yellow-down js--arrow-home"></i
-                ></a>
+            <ul class="main-nav col span-2-of-3 js--main-nav">
+              <li>
+                <a href="./index.html">Home</a>
               </li>
-              <li class="js--main-nav-about-li">
-                <a href="./notyet.html"
-                  >About<i class="arrow-yellow-down js--arrow-about"></i
-                ></a>
+              <li>
+                <a href="#about">About</a>
               </li>
-              <li class="js--main-nav-courses-li">
-                <a href="./notyet.html"
-                  >Courses<i class="arrow-yellow-down js--arrow-courses"></i
-                ></a>
+              <li>
+                <a href="./courses.html">Courses</a>
               </li>
               <li class="btn-yellow">
                 <a id="apply" href="notyet.html">Apply</a>
@@ -57,54 +51,9 @@
             </ul>
 
             <i class="fas fa-bars fa-2x"></i>
-
-            <div class="menu menu-home">
-              <ul>
-                <li>
-                  <a href="#" data-linkname="testimonials">Testimonials</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="menu menu-about">
-              <ul>
-                <li>
-                  <a href="#" data-linkname="instructors">Instructors</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </nav>
       </header>
-
-      <div class="menu menu-courses">
-        <ul>
-          <li>
-            <a href="./notyet.html">Graphic Design</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Journalism</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Photography</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Videography</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Web Design</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Marketing</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Public Speaking</a>
-          </li>
-          <li>
-            <a href="./notyet.html">Information Tech</a>
-          </li>
-        </ul>
-      </div>
 
       <section class="section-main span-3-of-3">
         <div class="row section-main-content">
@@ -123,7 +72,7 @@
         </div>
       </section>
 
-      <section class="section-instructors">
+      <section class="section-instructors" id="about">
         <div class="row">
           <h1 class="section-title">Meet Our Instructors</h1>
         </div>

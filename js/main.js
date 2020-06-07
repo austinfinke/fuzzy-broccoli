@@ -1,53 +1,8 @@
 $(() => {
-  itemHover("courses");
-  itemHover("about");
-  itemHover("home");
-  itemClick("home");
-  itemClick("about");
-  onScroll();
   animateArrow();
-  checkScreen();
+  // mobileLogo();
+  mobileNav();
 });
-
-const itemHover = (item) => {
-  const link = document.querySelector(`.js--main-nav-${item}-li`);
-  const arrow = document.querySelector(`.js--arrow-${item}`);
-  const hoverMenu = document.querySelector(`.menu-${item}`);
-
-  link.addEventListener("mouseover", (e) => {
-    hoverMenu.classList.add("show");
-    arrow.classList.add("arrow-yellow-up");
-    arrow.classList.remove("arrow-yellow-down");
-  });
-
-  link.addEventListener("mouseout", (e) => {
-    hoverMenu.classList.remove("show");
-    arrow.classList.remove("arrow-yellow-up");
-    arrow.classList.add("arrow-yellow-down");
-  });
-
-  hoverMenu.addEventListener("mouseover", (e) => {
-    hackMargin();
-    hoverMenu.classList.add("show");
-    arrow.classList.add("arrow-yellow-up");
-  });
-
-  hoverMenu.addEventListener("mouseout", (e) => {
-    hoverMenu.classList.remove("show");
-    arrow.classList.remove("arrow-yellow-up");
-    arrow.classList.add("arrow-yellow-down");
-  });
-};
-
-function itemClick(item) {
-  const menu = document.querySelector(`.menu-${item}`);
-  menu.addEventListener("click", (e) => {
-    e.preventDefault();
-    const linkname = e.target.getAttribute("data-linkname");
-    const view = document.querySelector(`.section-${linkname}`);
-    view ? view.scrollIntoView() : 0;
-  });
-}
 
 function onScroll() {
   const arrow = document.querySelector(".fa-arrow-circle-down");
@@ -71,23 +26,36 @@ function animateArrow() {
   arrow.animate({ top: "94%" }, 50);
   arrow.animate({ top: "95%" }, 40);
   arrow.animate({ top: "96%" }, 30);
+  onScroll();
 }
 
-function checkScreen() {
-  const logo = document.querySelector(".main-logo");
-  const path = `./css/assets/images/gti_logo_mobile.png`;
-  if (window.innerWidth < 900) {
-    logo.src = path;
+function mobileNav() {
+  const nav = document.querySelector(".js--main-nav");
+  const bar = document.querySelector(".fa-bars");
+  if (window.innerWidth < 1140) {
+    nav.classList.remove("span-2-of-3");
+    nav.classList.add("mobile-nav");
+    const mobNav = document.querySelector(".mobile-nav");
+    nav.classList.add("span-1-of-1");
+
+    bar.addEventListener("click", (e) => {
+      e.preventDefault();
+      nav.style.display = "block";
+    });
+
+    document.addEventListener("scroll", () => {
+      mobNav.style.display = "none";
+    });
   }
 }
 
-function hackMargin() {
-  const navLink = document.querySelector(".js--main-nav-courses-li");
-  const menu = document.querySelector(".menu-courses");
-  let mL = navLink.getBoundingClientRect();
-  mL = mL.left;
-  menu.style.marginLeft = mL;
-}
+// function mobileLogo() {
+//   const logo = document.querySelector(".main-logo");
+//   const path = `./css/assets/images/gti_logo_mobile.png`;
+//   if (window.innerWidth < 900) {
+//     logo.src = path;
+//   }
+// }
 
 /**
  * DOCUMENT READY WITHOUT JQUERY

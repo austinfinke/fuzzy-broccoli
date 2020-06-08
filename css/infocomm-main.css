@@ -1,0 +1,56 @@
+.infocomm-main {
+  margin: 40px auto 100px auto;
+  width: 1140px;
+  background-color: #ffffff;
+  height: 68vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../css/assets/images/server.jpeg);
+  /* Photo by Taylor Vick on Unsplash */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infocomm-main h1 {
+  font-size: 200%;
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 38%;
+}
+
+.infocomm-main h1 + p {
+  color: #fff;
+  top: 68%;
+  left: 43%;
+  position: absolute;
+}
+
+/* TODO:  hide icon on initial scroll*/
+.infocomm-main i {
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 50%;
+  top: 84%;
+}
+
+.infocomm-main i + p {
+  margin-top: 20px;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+}
+
+.infocomm-main i + p:after {
+  display: block;
+  height: 2px;
+  width: 35%;
+  background-color: #f2b705;
+  content: "";
+  margin: 0 auto;
+}

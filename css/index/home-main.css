@@ -1,6 +1,6 @@
 .section-main {
   margin: 40px auto 100px auto;
-  width: 80%;
+  width: 85%;
   background-color: #ffffff;
   height: 68vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  border-radius: 3px;
   resize: both;
   position: relative;
 }

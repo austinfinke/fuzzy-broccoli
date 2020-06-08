@@ -5,5 +5,46 @@
 
 .container h1 {
   text-transform: uppercase;
-  margin: 3% 0 1% 12%;
+  margin: 3% 0 3% 12%;
+}
+
+.section-courses {
+  margin: 0 auto;
+  padding: 3%;
+  width: 85%;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.card img {
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: auto;
+  margin-bottom: 2%;
+  border-radius: 3px;
+}
+
+.card p {
+  padding: 2%;
+  color: #070a40;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.course-row:last-of-type {
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .section-courses {
+    width: 95%;
+  }
+
+  .card {
+    margin: 2% 0;
+  }
+
+  .card:last-of-type {
+    margin-bottom: 10%;
+  }
 }
